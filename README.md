@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Azure Digital Evidence Platform — Senior Azure Engineer Lab
 
 A hands-on portfolio/reference architecture designed to demonstrate senior Azure engineering skills for a Federal digital-evidence platform.
@@ -87,3 +88,6 @@ A hands-on portfolio/reference architecture designed to demonstrate senior Azure
 This lab creates Azure resources that can incur charges. Start with small development SKUs, destroy resources when finished, and use Azure Cost Management budgets/alerts.
 
 Do not upload real sensitive, classified, PII, law-enforcement, or government evidence. Use synthetic test files only.
+=======
+# Azure-Digital-Evidence-Platform
+>>>>>>> 73aeeb7d68b04abb2fa7d7ca4c5db60729942e68
