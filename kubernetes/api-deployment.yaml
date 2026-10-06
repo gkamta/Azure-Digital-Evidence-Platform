@@ -12,10 +12,12 @@ spec:
     metadata:
       labels:
         app: evidence-api
+        azure.workload.identity/use: "true"
     spec:
+      serviceAccountName: evidence-api-sa
       containers:
         - name: evidence-api
-          image: acrevidenceplatform001.azurecr.io/evidence-api:v1
+          image: acrevidenceplatform001.azurecr.io/evidence-api:v2
           ports:
             - containerPort: 8000
           securityContext:
