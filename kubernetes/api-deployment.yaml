@@ -17,9 +17,13 @@ spec:
       serviceAccountName: evidence-api-sa
       containers:
         - name: evidence-api
-          image: acrevidenceplatform001.azurecr.io/evidence-api:v2
+          image: acrevidenceplatform001.azurecr.io/evidence-api:v3
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
+          env:
+            - name: AZURE_STORAGE_ACCOUNT
+              value: "stevidenceplatform001"
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
